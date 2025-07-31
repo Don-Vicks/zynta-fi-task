@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users - Zynta-Fi | Referral System</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-header">
+        <div class="container">
+            <div class="brand">
+                <h1>Community Members</h1>
+                <p>Meet everyone who's part of our referral network</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="card users-section">
+                <div class="card-header">
+                    <h2>🌟 All Community Members</h2>
+                    <p>Browse through our growing community</p>
+                </div>
+                
+                <div class="users-filter">
+                    <input type="text" id="searchUsers" placeholder="🔍 Search members..." class="search-input">
+                    <select id="sortUsers" class="sort-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="points">Most Points</option>
+                    </select>
+                </div>
+                
+                <div id="usersList" class="users-list">
+                    <div class="empty-state">
+                        <div class="empty-icon">👥</div>
+                        <h3>Loading members...</h3>
+                        <p>Please wait while we fetch the community data</p>
+                    </div>
+                </div>
+                
+                <div class="back-link">
+                    <a href="index.html">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/members.js"></script>
+</body>
+</html>

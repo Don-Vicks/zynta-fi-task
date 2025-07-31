@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zynta-Fi | Referral System</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-header">
+        <div class="container">
+            <div class="brand">
+                <h1>Zynta-Fi Referral System</h1>
+                <p>Invite friends and earn rewards together</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Stats Overview Section -->
+        <div class="stats-section">
+            <div class="container">
+                <h2 class="stats-title">Our Growing Community</h2>
+                <div class="stats-overview" id="statsOverview">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalUsers">0</div>
+                        <div class="stat-label">Total Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalReferrals">0</div>
+                        <div class="stat-label">Referrals Made</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalPoints">0</div>
+                        <div class="stat-label">Points Earned</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-section">
+            <div class="hero-content">
+                <h2 class="hero-title">🚀 Start Your Referral Journey</h2>
+                <p class="hero-subtitle">Join thousands of users earning rewards by sharing with friends</p>
+                <button class="cta-button" id="openRegistrationModal">Get Started Now</button>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Earn Points</h3>
+                    <p>Get rewarded for every successful referral</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Share & Connect</h3>
+                    <p>Build your network and grow together</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Unlock Rewards</h3>
+                    <p>Redeem points for amazing prizes</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="users-preview">
+            <h3>Recent Community Members</h3>
+            <div id="recentUsers" class="recent-users-list"></div>
+            <a href="users.html" class="view-all-btn">View All Members</a>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registrationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🎯 Join the Community</h3>
+                <button class="close-btn" id="closeRegistrationModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="messageContainer"></div>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">👤 Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">📧 Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="referralCode">🎫 Referral Code</label>
+                        <input type="text" id="referralCode" name="referralCode" placeholder="Enter a friend's referral code (optional)">
+                        <div class="input-help">Have a referral code? Enter it to earn bonus points!</div>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Create Account</span>
+                        <span class="btn-icon">🚀</span>
+                    </button>
+                </form>
+                <div class="loading" id="loadingIndicator">
+                    <div class="spinner"></div>
+                    <span>Creating your account...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Referral Code Modal -->
+    <div class="modal" id="referralModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🎉 Your Referral Code</h3>
+                <button class="close-btn" id="closeReferralModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Share this code with friends to earn points when they join!</p>
+                <div class="referral-code-display">
+                    <span id="generatedCode"></span>
+                    <button class="copy-btn" id="copyCodeBtn">📋 Copy</button>
+                </div>
+                <div class="share-options">
+                    <h4>Share via:</h4>
+                    <div class="share-buttons">
+                        <button class="share-btn email" id="shareEmail">📧 Email</button>
+                        <button class="share-btn twitter" id="shareTwitter">🐦 Twitter</button>
+                        <button class="share-btn whatsapp" id="shareWhatsApp">💬 WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

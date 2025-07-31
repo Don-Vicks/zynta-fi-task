@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Zynta-Fi | Referral System</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-header">
+        <div class="container">
+            <div class="brand">
+                <h1>Join Zynta-Fi</h1>
+                <p>Create your account and start earning rewards</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="card form-section">
+                <div class="card-header">
+                    <h2>🎯 Create Your Account</h2>
+                    <p>Get your unique referral code and start earning</p>
+                </div>
+                
+                <div id="messageContainer"></div>
+                
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">👤 Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">📧 Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="referralCode">🎫 Referral Code</label>
+                        <input type="text" id="referralCode" name="referralCode" placeholder="Enter a friend's referral code (optional)">
+                        <div class="input-help">Have a referral code? Enter it to earn bonus points!</div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Create Account</span>
+                        <span class="btn-icon">🚀</span>
+                    </button>
+                </form>
+
+                <div class="loading" id="loadingIndicator">
+                    <div class="spinner"></div>
+                    <span>Creating your account...</span>
+                </div>
+                
+                <div class="back-link">
+                    <a href="index.html">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/register.js"></script>
+</body>
+</html>
