@@ -70,11 +70,13 @@ By default, the frontend is configured to use the deployed API:
 this.apiBaseUrl = 'https://zynta-fi-task.onrender.com/api';
 ```
 
-If you're running the backend locally (or on another host), you must update the API base URL in the following file:
+If you're running the backend locally (or on another host), you must update the API base URL in the following files:
 
-`frontend/assets/js/index.js`
+- `frontend/assets/js/index.js`
+- `frontend/assets/js/members.js`  
+- `frontend/assets/js/register.js`
 
-Change the line:
+Change the line in each file:
 
 ```javascript
 this.apiBaseUrl = 'https://zynta-fi-task.onrender.com/api';
