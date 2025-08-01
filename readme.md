@@ -16,7 +16,8 @@ Zynta-Fi is a full-stack web application that enables users to register, join a 
 ---
 
 ## Project Structure
-
-
+I followed a Mono Repository aoproach for this assesment:
+- Backend: this folder contains the Backend Code built with Express.js
+- Frontend: this folder contains the Frontend code written with HTML and plain JavaScript and CSS.
 
 
