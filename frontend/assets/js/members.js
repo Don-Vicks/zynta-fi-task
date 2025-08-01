@@ -4,7 +4,7 @@ class MembersPage {
         this.searchInput = document.getElementById('searchUsers');
         this.sortSelect = document.getElementById('sortUsers');
         this.allUsers = [];
-        this.apiBaseUrl = 'http://localhost:3000/api';
+        this.apiBaseUrl = 'https://zynta-fi-task.onrender.com/api';
         
         this.init();
     }
