@@ -95,3 +95,5 @@ this.apiBaseUrl = 'http://localhost:3000/api';
 - **Frontend**: HTML, CSS, Vanilla JavaScript
 - **Backend**: Node.js, Express
 - **Storage**: In-memory (non-persistent)
+
+---
