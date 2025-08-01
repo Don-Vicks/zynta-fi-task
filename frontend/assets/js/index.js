@@ -9,7 +9,7 @@ class LandingPage {
         this.loadingIndicator = document.getElementById('loadingIndicator');
         this.messageContainer = document.getElementById('messageContainer');
         
-        this.apiBaseUrl = 'http://localhost:3000/api';
+        this.apiBaseUrl = 'https://zynta-fi-task.onrender.com/api';
         this.init();
     }
 
